@@ -1,0 +1,532 @@
+{
+  "_meta": {
+    "description": "화면 UI 문자열. 키는 앱 소스의 data-t 속성과 일치.",
+    "languages": [
+      "ko",
+      "id"
+    ],
+    "updated": "2026-07-24"
+  },
+  "strings": {
+    "audioNote": {
+      "ko": "시범판은 휴대폰 TTS 음성",
+      "id": "Demo memakai TTS ponsel"
+    },
+    "bBack": {
+      "ko": "돌아가기",
+      "id": "Kembali"
+    },
+    "bNext": {
+      "ko": "다음",
+      "id": "Berikutnya"
+    },
+    "bPrev": {
+      "ko": "이전",
+      "id": "Kembali"
+    },
+    "bResult": {
+      "ko": "결과",
+      "id": "Hasil"
+    },
+    "bSubmit": {
+      "ko": "제출",
+      "id": "Selesai"
+    },
+    "baca": {
+      "ko": "읽기",
+      "id": "Baca"
+    },
+    "belum": {
+      "ko": "안 푼 문제가 있습니다. 제출할까요?",
+      "id": "Ada soal belum dijawab. Tetap selesai?"
+    },
+    "calcBase": {
+      "ko": "기본 근로 (209시간)",
+      "id": "Jam kerja normal (209 jam)"
+    },
+    "calcD": {
+      "ko": "2026년 최저임금 기준",
+      "id": "Upah minimum 2026 · per jam"
+    },
+    "calcNote": {
+      "ko": "보험료 공제 전 금액입니다. 실제 명세서와 비교해 보세요.",
+      "id": "Perkiraan sebelum potongan asuransi. Bandingkan dengan slip gaji Anda."
+    },
+    "calcOt": {
+      "ko": "연장근로",
+      "id": "Lembur"
+    },
+    "calcOtUnit": {
+      "ko": "시간 × 1.5",
+      "id": " jam × 1,5"
+    },
+    "calcT": {
+      "ko": "연장근로 수당 계산",
+      "id": "Hitung gaji lembur"
+    },
+    "calcTot": {
+      "ko": "예상 합계",
+      "id": "Perkiraan total"
+    },
+    "credit": {
+      "ko": "본 앱의 일부 자료는 한국산업인력공단이 공공누리 제3유형(출처표시·변경금지)으로 개방한 '한국어 표준교재(2024년 개정판)'를 이용했습니다. 원본은 epstopik.hrdkorea.or.kr에서 무료로 받을 수 있습니다.",
+      "id": "Sebagian materi menggunakan \"Buku Standar Bahasa Korea (edisi 2024)\" yang dibuka HRD Korea dengan lisensi KOGL Tipe 3 (atribusi · tanpa modifikasi). Dapat diunduh gratis di epstopik.hrdkorea.or.kr"
+    },
+    "d1": {
+      "ko": "병원 가기",
+      "id": "Ke rumah sakit"
+    },
+    "d1d": {
+      "ko": "아픈 곳을 설명하는 문장",
+      "id": "Kalimat untuk menjelaskan sakit"
+    },
+    "d2": {
+      "ko": "고향에 송금하기",
+      "id": "Kirim uang ke rumah"
+    },
+    "d2d": {
+      "ko": "방법과 수수료",
+      "id": "Cara dan biaya transfer"
+    },
+    "dengar": {
+      "ko": "듣기",
+      "id": "Dengar"
+    },
+    "exAlert": {
+      "ko": "알림 받기",
+      "id": "Beri tahu saya"
+    },
+    "exAlertD": {
+      "ko": "접수 시작되면 알려드립니다",
+      "id": "Notifikasi saat pendaftaran dibuka"
+    },
+    "exFull": {
+      "ko": "시범 모의고사",
+      "id": "Ujian demo"
+    },
+    "exFullD": {
+      "ko": "5문항 · 10분 · 해설 포함",
+      "id": "5 soal · 10 menit · dengan pembahasan"
+    },
+    "exNext": {
+      "ko": "확정된 일정 없음",
+      "id": "Belum ada jadwal resmi"
+    },
+    "exNextD": {
+      "ko": "인도네시아 일정 미공고 (공단 발표 대기)",
+      "id": "Jadwal Indonesia belum diumumkan HRD Korea"
+    },
+    "exSet1": {
+      "ko": "실전 모의고사 1회",
+      "id": "Ujian lengkap · Set 1"
+    },
+    "exSet2": {
+      "ko": "실전 모의고사 2회",
+      "id": "Ujian lengkap · Set 2"
+    },
+    "exSetD": {
+      "ko": "40문항 · 50분 · 실제 CBT 형식",
+      "id": "40 soal · 50 menit · format CBT asli"
+    },
+    "eyBasic": {
+      "ko": "기초",
+      "id": "Dasar"
+    },
+    "eyDaily": {
+      "ko": "생활",
+      "id": "Sehari-hari"
+    },
+    "eyExam": {
+      "ko": "다음 시험",
+      "id": "Ujian berikutnya"
+    },
+    "eyLife": {
+      "ko": "한국 생활",
+      "id": "Hidup di Korea"
+    },
+    "eyPay": {
+      "ko": "급여와 계약",
+      "id": "Gaji & kontrak"
+    },
+    "eyProg": {
+      "ko": "진도",
+      "id": "Kemajuan"
+    },
+    "eyQuick": {
+      "ko": "짧은 연습",
+      "id": "Latihan singkat"
+    },
+    "eyReal": {
+      "ko": "모의고사",
+      "id": "Simulasi ujian"
+    },
+    "eyRights": {
+      "ko": "권리와 절차",
+      "id": "Hak & prosedur"
+    },
+    "eySet": {
+      "ko": "설정",
+      "id": "Pengaturan"
+    },
+    "eyToday": {
+      "ko": "이어서 하기",
+      "id": "Lanjutkan"
+    },
+    "eyVocab": {
+      "ko": "단어장 · 1과 작업장 기초",
+      "id": "Kosakata · Unit 1 Tempat kerja"
+    },
+    "eyWork": {
+      "ko": "작업장 한국어",
+      "id": "Bahasa Korea di tempat kerja"
+    },
+    "eyWrong": {
+      "ko": "오답노트",
+      "id": "Catatan salah"
+    },
+    "fcTap": {
+      "ko": "탭하면 뜻 보기",
+      "id": "Ketuk untuk arti"
+    },
+    "g1": {
+      "ko": "한글 1과",
+      "id": "Hangul 1"
+    },
+    "g2": {
+      "ko": "문법 1과",
+      "id": "Tata bahasa 1"
+    },
+    "g3": {
+      "ko": "오늘의 단어",
+      "id": "Kata hari ini"
+    },
+    "g4": {
+      "ko": "표지판 연습",
+      "id": "Latihan rambu"
+    },
+    "g5": {
+      "ko": "병원 한국어",
+      "id": "Korea di RS"
+    },
+    "g6": {
+      "ko": "오답노트",
+      "id": "Catatan salah"
+    },
+    "gListen": {
+      "ko": "듣기",
+      "id": "Dengar"
+    },
+    "gRead": {
+      "ko": "읽기",
+      "id": "Baca"
+    },
+    "gWord": {
+      "ko": "단어",
+      "id": "Kata"
+    },
+    "gridT": {
+      "ko": "바로 가기",
+      "id": "Pintasan"
+    },
+    "hExam": {
+      "ko": "시험",
+      "id": "Ujian"
+    },
+    "hExamS": {
+      "ko": "모의고사와 연습",
+      "id": "Simulasi dan latihan"
+    },
+    "hHome": {
+      "ko": "홈",
+      "id": "Beranda"
+    },
+    "hHomeS": {
+      "ko": "다시 오신 것을 환영합니다",
+      "id": "Selamat datang kembali"
+    },
+    "hLearn": {
+      "ko": "학습",
+      "id": "Belajar"
+    },
+    "hLearnS": {
+      "ko": "한국어 기초",
+      "id": "Dasar bahasa Korea"
+    },
+    "hLife": {
+      "ko": "한국 생활",
+      "id": "Hidup di Korea"
+    },
+    "hLifeS": {
+      "ko": "일, 급여, 권리",
+      "id": "Kerja, gaji, dan hak Anda"
+    },
+    "hMe": {
+      "ko": "내 정보",
+      "id": "Saya"
+    },
+    "hMeS": {
+      "ko": "진도와 설정",
+      "id": "Kemajuan dan pengaturan"
+    },
+    "hasil": {
+      "ko": "정답",
+      "id": "Jawaban benar"
+    },
+    "heroBig": {
+      "ko": "3단계 · 유형별 연습",
+      "id": "Tahap 3 · Latihan tipe soal"
+    },
+    "heroCta": {
+      "ko": "이어서 하기",
+      "id": "Lanjutkan"
+    },
+    "heroLbl": {
+      "ko": "나의 학습 단계",
+      "id": "Tahap belajar Anda"
+    },
+    "heroNote": {
+      "ko": "3단계 · 다섯 단계 중",
+      "id": "Tahap 3 dari 5"
+    },
+    "konfirm": {
+      "ko": "제출하고 채점할까요?",
+      "id": "Selesai dan periksa jawaban?"
+    },
+    "lBook": {
+      "ko": "표준교재 2024",
+      "id": "Buku standar 2024"
+    },
+    "lBookD": {
+      "ko": "공단 최신 개정판",
+      "id": "Edisi terbaru HRD Korea"
+    },
+    "lGram": {
+      "ko": "문법",
+      "id": "Tata bahasa"
+    },
+    "lGramD": {
+      "ko": "시험에 자주 나오는 형태",
+      "id": "Pola yang sering keluar di ujian"
+    },
+    "lHangul": {
+      "ko": "한글",
+      "id": "Hangul"
+    },
+    "lHangulD": {
+      "ko": "자음·모음과 읽는 법",
+      "id": "Konsonan, vokal, cara baca"
+    },
+    "legal": {
+      "ko": "법률 자문이 아닌 일반 안내입니다. 공식 출처: moel.go.kr · eps.go.kr. 이 앱은 한국산업인력공단과 무관합니다.",
+      "id": "Informasi umum, bukan nasihat hukum. Sumber resmi: moel.go.kr · eps.go.kr. Aplikasi ini tidak berafiliasi dengan HRD Korea."
+    },
+    "lifeCard": {
+      "ko": "월급 명세서 읽기",
+      "id": "Membaca slip gaji"
+    },
+    "lifeCardD": {
+      "ko": "급여가 제대로 지급됐는지 확인",
+      "id": "Periksa apakah gaji Anda benar"
+    },
+    "lifeHD": {
+      "ko": "근로계약, 급여, 보험, 그리고 한국에서 보낼 4년 10개월 동안의 권리.",
+      "id": "Kontrak kerja, gaji, asuransi, dan hak Anda selama 4 tahun 10 bulan di Korea."
+    },
+    "lifeHT": {
+      "ko": "시험책이 알려주지 않는 것",
+      "id": "Yang tidak diajarkan buku ujian"
+    },
+    "lihatKo": {
+      "ko": "한국어 해설 보기",
+      "id": "Lihat penjelasan Korea"
+    },
+    "lihatTeks": {
+      "ko": "스크립트 보기",
+      "id": "Lihat teks"
+    },
+    "locked": {
+      "ko": "유료 팩에 포함된 콘텐츠입니다",
+      "id": "Termasuk paket berbayar"
+    },
+    "mock1": {
+      "ko": "모의고사 보기",
+      "id": "Ikut ujian simulasi"
+    },
+    "mock2": {
+      "ko": "무료 · 5문항 10분 · 해설 포함",
+      "id": "Gratis · 5 soal 10 menit · ada pembahasan"
+    },
+    "nExam": {
+      "ko": "시험",
+      "id": "Ujian"
+    },
+    "nHome": {
+      "ko": "홈",
+      "id": "Beranda"
+    },
+    "nLearn": {
+      "ko": "학습",
+      "id": "Belajar"
+    },
+    "nLife": {
+      "ko": "한국생활",
+      "id": "Korea"
+    },
+    "nMe": {
+      "ko": "내정보",
+      "id": "Saya"
+    },
+    "pFree": {
+      "ko": "무료",
+      "id": "GRATIS"
+    },
+    "pPro": {
+      "ko": "유료팩",
+      "id": "PAKET"
+    },
+    "pSoon": {
+      "ko": "준비중",
+      "id": "SEGERA"
+    },
+    "pembahasan": {
+      "ko": "해설",
+      "id": "Pembahasan"
+    },
+    "qListen": {
+      "ko": "듣기",
+      "id": "Mendengar"
+    },
+    "qListenD": {
+      "ko": "영역별 연습",
+      "id": "Latihan per bagian"
+    },
+    "qRandom": {
+      "ko": "랜덤 문제",
+      "id": "Soal acak"
+    },
+    "qRandomD": {
+      "ko": "3문항 · 3분",
+      "id": "3 soal · 3 menit"
+    },
+    "r1": {
+      "ko": "근로계약서 읽는 법",
+      "id": "Membaca kontrak kerja"
+    },
+    "r1d": {
+      "ko": "조항별 모국어 설명",
+      "id": "Pasal per pasal, bahasa Indonesia"
+    },
+    "r2": {
+      "ko": "4대보험",
+      "id": "4 asuransi wajib"
+    },
+    "r2d": {
+      "ko": "급여에서 무엇이 빠지는가",
+      "id": "Apa yang dipotong dari gaji Anda"
+    },
+    "r3": {
+      "ko": "임금을 못 받았을 때",
+      "id": "Gaji tidak dibayar"
+    },
+    "r3d": {
+      "ko": "첫 조치와 신고처",
+      "id": "Langkah pertama dan ke mana melapor"
+    },
+    "r4": {
+      "ko": "사업장 변경",
+      "id": "Pindah tempat kerja"
+    },
+    "r4d": {
+      "ko": "요건과 공식 절차",
+      "id": "Syarat dan prosedur resmi"
+    },
+    "setDown": {
+      "ko": "오프라인 저장",
+      "id": "Unduh untuk offline"
+    },
+    "setDownD": {
+      "ko": "데이터 없이 학습",
+      "id": "Belajar tanpa data internet"
+    },
+    "setLang": {
+      "ko": "언어",
+      "id": "Bahasa"
+    },
+    "setLangV": {
+      "ko": "한국어",
+      "id": "Bahasa Indonesia"
+    },
+    "setNoti": {
+      "ko": "시험 알림",
+      "id": "Notifikasi ujian"
+    },
+    "soon": {
+      "ko": "정식판에서 제공됩니다",
+      "id": "Tersedia di versi lengkap"
+    },
+    "st1": {
+      "ko": "한글",
+      "id": "Hangul"
+    },
+    "st2": {
+      "ko": "어휘",
+      "id": "Kosakata"
+    },
+    "st3": {
+      "ko": "유형",
+      "id": "Tipe soal"
+    },
+    "st4": {
+      "ko": "모의고사",
+      "id": "Simulasi"
+    },
+    "st5": {
+      "ko": "실전",
+      "id": "Siap ujian"
+    },
+    "tMock": {
+      "ko": "모의고사",
+      "id": "Ujian simulasi"
+    },
+    "tMockD": {
+      "ko": "5문항 · 10분",
+      "id": "5 soal · 10 menit"
+    },
+    "tWord": {
+      "ko": "단어장",
+      "id": "Kosakata"
+    },
+    "tWordD": {
+      "ko": "1과 · 단어 12개",
+      "id": "Unit 1 · 12 kata"
+    },
+    "tutupKo": {
+      "ko": "닫기",
+      "id": "Tutup"
+    },
+    "tutupTeks": {
+      "ko": "닫기",
+      "id": "Tutup teks"
+    },
+    "wOrder": {
+      "ko": "작업 지시어",
+      "id": "Instruksi kerja"
+    },
+    "wOrderD": {
+      "ko": "현장에서 쓰는 표현",
+      "id": "Kalimat yang dipakai atasan"
+    },
+    "wSign": {
+      "ko": "안전 표지판",
+      "id": "Rambu keselamatan"
+    },
+    "wSignD": {
+      "ko": "공장에서 꼭 알아야 할 표지",
+      "id": "Tanda wajib di pabrik"
+    },
+    "wrongNone": {
+      "ko": "아직 없습니다. 틀린 문제가 자동 저장됩니다.",
+      "id": "Belum ada. Soal yang salah tersimpan otomatis."
+    }
+  }
+}

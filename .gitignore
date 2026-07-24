@@ -1,0 +1,34 @@
+# 의존성
+node_modules/
+
+# 빌드 산출물
+dist/
+android/app/build/
+android/build/
+android/.gradle/
+*.aab
+*.apk
+
+# 서명 키 — 절대 올리지 않는다
+*.keystore
+*.jks
+android/app/release.keystore
+local.properties
+.env
+.env.*
+
+# 내부 문서 — 공개 저장소에 올리지 않는다 (로컬에만 보관)
+docs/
+
+# 에디터·OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# tsc -b 산출물
+*.tsbuildinfo
+vite.config.js
+vite.config.d.ts
+capacitor.config.js
+capacitor.config.d.ts

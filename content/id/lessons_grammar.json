@@ -1,0 +1,92 @@
+{
+  "_meta": {
+    "description": "문법 학습 과. 목표 24과.",
+    "schema_version": 1,
+    "ui_language": "id",
+    "planned_total": 24,
+    "updated": "2026-07-24"
+  },
+  "lessons": [
+    {
+      "unit": 1,
+      "status": "review_1_done",
+      "id": "gram1",
+      "category": {
+        "ko": "문법 · 1과",
+        "id": "Tata bahasa 1"
+      },
+      "title": {
+        "ko": "-(으)세요 / -부터 -까지",
+        "id": "-(으)세요 / -부터 -까지"
+      },
+      "lede": {
+        "ko": "시험과 작업장에서 가장 먼저 만나는 두 가지 문형입니다.",
+        "id": "Dua pola kalimat pertama yang Anda temui di ujian dan tempat kerja."
+      },
+      "body": [
+        {
+          "h": {
+            "ko": "① -(으)세요 — 정중한 지시·요청",
+            "id": "① -(으)세요 — perintah/permintaan sopan"
+          },
+          "p": {
+            "ko": "받침이 없으면 <b>-세요</b>, 받침이 있으면 <b>-으세요</b>를 붙입니다. 작업 지시와 안내방송에 매우 자주 나옵니다.",
+            "id": "Tanpa konsonan akhir pakai <b>-세요</b>, dengan konsonan akhir pakai <b>-으세요</b>. Sangat sering di instruksi kerja dan pengumuman."
+          },
+          "phrases": [
+            [
+              "안전모를 쓰세요.",
+              "Pakailah helm."
+            ],
+            [
+              "여기에 앉으세요.",
+              "Silakan duduk di sini."
+            ],
+            [
+              "휴게실에서 기다리세요.",
+              "Tunggulah di ruang istirahat."
+            ]
+          ]
+        },
+        {
+          "h": {
+            "ko": "② -부터 -까지 — 시작과 끝",
+            "id": "② -부터 -까지 — dari ... sampai ..."
+          },
+          "p": {
+            "ko": "<b>부터</b>는 시작, <b>까지</b>는 끝. 근무 시간·기간 문제의 단골 표현입니다.",
+            "id": "<b>부터</b> = mulai, <b>까지</b> = sampai. Selalu muncul di soal jam kerja dan jadwal."
+          },
+          "phrases": [
+            [
+              "8시부터 6시까지 일해요.",
+              "Bekerja dari jam 8 sampai jam 6."
+            ],
+            [
+              "월요일부터 금요일까지",
+              "Dari Senin sampai Jumat"
+            ],
+            [
+              "여기부터 저기까지 옮기세요.",
+              "Pindahkan dari sini sampai sana."
+            ]
+          ]
+        },
+        {
+          "warn": {
+            "ko": "시험 포인트",
+            "id": "Poin ujian"
+          },
+          "wp": {
+            "ko": "듣기에서 \"몇 시부터\"를 물으면 시작 시각을, \"몇 시까지\"를 물으면 끝나는 시각을 찾아야 합니다. 숫자만 듣고 고르면 함정에 걸립니다.",
+            "id": "Di soal dengar, \"몇 시부터\" menanyakan jam mulai, \"몇 시까지\" jam selesai. Kalau hanya dengar angka tanpa partikel, Anda kena jebakan."
+          }
+        }
+      ],
+      "source_line": {
+        "ko": "자체 제작 학습 자료 · 1과 / 예정 24과",
+        "id": "Materi orisinal · Pelajaran 1 dari 24"
+      }
+    }
+  ]
+}

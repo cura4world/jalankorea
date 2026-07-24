@@ -1,0 +1,105 @@
+{
+  "_meta": {
+    "description": "단어장. 과 단위로 누적.",
+    "schema_version": 1,
+    "ui_language": "id",
+    "count": 12,
+    "updated": "2026-07-24"
+  },
+  "units": [
+    {
+      "unit": 1,
+      "title": {
+        "ko": "작업장 기초",
+        "id": "Dasar tempat kerja"
+      },
+      "status": "review_1_done",
+      "words": [
+        {
+          "id": "V01-001",
+          "ko": "안전모",
+          "id_meaning": "helm keselamatan",
+          "romaja": "an-jeon-mo",
+          "audio": null
+        },
+        {
+          "id": "V01-002",
+          "ko": "안전화",
+          "id_meaning": "sepatu safety",
+          "romaja": "an-jeon-hwa",
+          "audio": null
+        },
+        {
+          "id": "V01-003",
+          "ko": "장갑",
+          "id_meaning": "sarung tangan",
+          "romaja": "jang-gap",
+          "audio": null
+        },
+        {
+          "id": "V01-004",
+          "ko": "휴게실",
+          "id_meaning": "ruang istirahat",
+          "romaja": "hyu-ge-sil",
+          "audio": null
+        },
+        {
+          "id": "V01-005",
+          "ko": "작업",
+          "id_meaning": "pekerjaan",
+          "romaja": "ja-geop",
+          "audio": null
+        },
+        {
+          "id": "V01-006",
+          "ko": "기계",
+          "id_meaning": "mesin",
+          "romaja": "gi-gye",
+          "audio": null
+        },
+        {
+          "id": "V01-007",
+          "ko": "점검",
+          "id_meaning": "pemeriksaan",
+          "romaja": "jeom-geom",
+          "audio": null
+        },
+        {
+          "id": "V01-008",
+          "ko": "교대",
+          "id_meaning": "shift/pergantian",
+          "romaja": "gyo-dae",
+          "audio": null
+        },
+        {
+          "id": "V01-009",
+          "ko": "월급",
+          "id_meaning": "gaji bulanan",
+          "romaja": "wol-geup",
+          "audio": null
+        },
+        {
+          "id": "V01-010",
+          "ko": "야간수당",
+          "id_meaning": "tunjangan malam",
+          "romaja": "ya-gan-su-dang",
+          "audio": null
+        },
+        {
+          "id": "V01-011",
+          "ko": "계약서",
+          "id_meaning": "surat kontrak",
+          "romaja": "gye-yak-seo",
+          "audio": null
+        },
+        {
+          "id": "V01-012",
+          "ko": "사장님",
+          "id_meaning": "bos/majikan",
+          "romaja": "sa-jang-nim",
+          "audio": null
+        }
+      ]
+    }
+  ]
+}

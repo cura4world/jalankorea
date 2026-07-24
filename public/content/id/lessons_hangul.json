@@ -1,0 +1,194 @@
+{
+  "_meta": {
+    "description": "한글 학습 과. 목표 12과.",
+    "schema_version": 1,
+    "ui_language": "id",
+    "planned_total": 12,
+    "updated": "2026-07-24"
+  },
+  "jamo": {
+    "consonants": [
+      {
+        "char": "ㄱ",
+        "romaja": "g/k",
+        "name": "기역"
+      },
+      {
+        "char": "ㄴ",
+        "romaja": "n",
+        "name": "니은"
+      },
+      {
+        "char": "ㄷ",
+        "romaja": "d/t",
+        "name": "디귿"
+      },
+      {
+        "char": "ㄹ",
+        "romaja": "r/l",
+        "name": "리을"
+      },
+      {
+        "char": "ㅁ",
+        "romaja": "m",
+        "name": "미음"
+      },
+      {
+        "char": "ㅂ",
+        "romaja": "b/p",
+        "name": "비읍"
+      },
+      {
+        "char": "ㅅ",
+        "romaja": "s",
+        "name": "시옷"
+      },
+      {
+        "char": "ㅇ",
+        "romaja": "-/ng",
+        "name": "이응"
+      },
+      {
+        "char": "ㅈ",
+        "romaja": "j",
+        "name": "지읒"
+      },
+      {
+        "char": "ㅊ",
+        "romaja": "ch",
+        "name": "치읓"
+      },
+      {
+        "char": "ㅋ",
+        "romaja": "k",
+        "name": "키읔"
+      },
+      {
+        "char": "ㅌ",
+        "romaja": "t",
+        "name": "티읕"
+      },
+      {
+        "char": "ㅍ",
+        "romaja": "p",
+        "name": "피읖"
+      },
+      {
+        "char": "ㅎ",
+        "romaja": "h",
+        "name": "히읗"
+      }
+    ],
+    "vowels": [
+      {
+        "char": "ㅏ",
+        "romaja": "a",
+        "name": "아"
+      },
+      {
+        "char": "ㅑ",
+        "romaja": "ya",
+        "name": "야"
+      },
+      {
+        "char": "ㅓ",
+        "romaja": "eo",
+        "name": "어"
+      },
+      {
+        "char": "ㅕ",
+        "romaja": "yeo",
+        "name": "여"
+      },
+      {
+        "char": "ㅗ",
+        "romaja": "o",
+        "name": "오"
+      },
+      {
+        "char": "ㅛ",
+        "romaja": "yo",
+        "name": "요"
+      },
+      {
+        "char": "ㅜ",
+        "romaja": "u",
+        "name": "우"
+      },
+      {
+        "char": "ㅠ",
+        "romaja": "yu",
+        "name": "유"
+      },
+      {
+        "char": "ㅡ",
+        "romaja": "eu",
+        "name": "으"
+      },
+      {
+        "char": "ㅣ",
+        "romaja": "i",
+        "name": "이"
+      }
+    ]
+  },
+  "lessons": [
+    {
+      "unit": 1,
+      "status": "review_1_done",
+      "id": "hangul",
+      "category": {
+        "ko": "학습 · 1과",
+        "id": "Pelajaran 1"
+      },
+      "title": {
+        "ko": "한글 자음과 모음",
+        "id": "Konsonan dan vokal Hangul"
+      },
+      "lede": {
+        "ko": "글자를 눌러 소리를 들어보세요. 한글은 자음 14개와 모음 10개의 조합으로 모든 글자를 만듭니다.",
+        "id": "Ketuk huruf untuk mendengar bunyinya. Hangul membentuk semua suku kata dari 14 konsonan dan 10 vokal."
+      },
+      "body": [
+        {
+          "h": {
+            "ko": "자음 14개",
+            "id": "14 konsonan"
+          },
+          "jamo": "cons"
+        },
+        {
+          "h": {
+            "ko": "모음 10개",
+            "id": "10 vokal"
+          },
+          "jamo": "vows"
+        },
+        {
+          "h": {
+            "ko": "글자가 만들어지는 방식",
+            "id": "Cara suku kata terbentuk"
+          },
+          "p": {
+            "ko": "자음과 모음이 블록처럼 결합합니다. <b>ㄱ + ㅏ = 가</b>, <b>ㅎ + ㅏ + ㄴ = 한</b>. 받침(끝 자음)이 붙으면 소리가 닫힙니다.",
+            "id": "Konsonan dan vokal digabung seperti balok: <b>ㄱ + ㅏ = 가</b>, <b>ㅎ + ㅏ + ㄴ = 한</b>. Konsonan akhir (받침) menutup bunyi suku kata."
+          }
+        },
+        {
+          "box": {
+            "ko": "다음 과 예고",
+            "id": "Pelajaran berikutnya"
+          },
+          "bp": {
+            "ko": "2과에서는 받침과 겹모음을 배웁니다. (준비 중)",
+            "id": "Pelajaran 2: konsonan akhir dan vokal rangkap. (Segera)"
+          }
+        }
+      ],
+      "source_line": {
+        "ko": "자체 제작 학습 자료 · 1과 / 예정 12과",
+        "id": "Materi orisinal · Pelajaran 1 dari 12"
+      }
+    }
+  ]
+}

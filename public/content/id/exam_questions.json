@@ -1,0 +1,315 @@
+{
+  "_meta": {
+    "description": "EPS-TOPIK 모의고사 문항. source=original은 자체 제작(저작권 제약 없음), textbook은 표준교재 인용(원문 무변경·출처표시 필수).",
+    "schema_version": 1,
+    "ui_language": "id",
+    "count": 5,
+    "updated": "2026-07-24"
+  },
+  "questions": [
+    {
+      "id": "Q001",
+      "section": "listening",
+      "type_tag": "대화 듣기",
+      "type_label": {
+        "ko": "대화 듣기",
+        "id": "Percakapan"
+      },
+      "source": "original",
+      "pack": "free",
+      "status": "review_1_done",
+      "prompt": {
+        "ko": "두 사람은 내일 언제부터 일을 시작합니까?",
+        "id": "Kapan mereka mulai bekerja besok?"
+      },
+      "options": [
+        {
+          "ko": "오전 7시",
+          "id": "오전 7시"
+        },
+        {
+          "ko": "오전 8시",
+          "id": "오전 8시"
+        },
+        {
+          "ko": "오후 8시",
+          "id": "오후 8시"
+        },
+        {
+          "ko": "오전 9시",
+          "id": "오전 9시"
+        }
+      ],
+      "answer_index": 1,
+      "explanation": {
+        "id": "Kata kuncinya <b>아침 여덟 시</b> — jam 8 pagi. 아침 berarti pagi, jadi pilihan ③ (오후 = sore) tidak tepat meskipun angkanya sama.",
+        "ko": "핵심은 '아침 여덟 시'입니다. '아침'이 붙었으므로 숫자가 같은 ③(오후 8시)은 오답입니다."
+      },
+      "key_words": [
+        {
+          "ko": "아침",
+          "id": "pagi"
+        },
+        {
+          "ko": "여덟 시",
+          "id": "jam 8"
+        },
+        {
+          "ko": "시작하다",
+          "id": "mulai"
+        }
+      ],
+      "audio": {
+        "tts_text": "내일은 아침 여덟 시부터 일을 시작합니다. 네, 알겠습니다. 여덟 시까지 가겠습니다.",
+        "file": null
+      },
+      "script": {
+        "ko": "남자: 내일은 아침 여덟 시부터 일을 시작합니다.<br>여자: 네, 알겠습니다. 여덟 시까지 가겠습니다."
+      }
+    },
+    {
+      "id": "Q002",
+      "section": "listening",
+      "type_tag": "안내방송 듣기",
+      "type_label": {
+        "ko": "안내방송 듣기",
+        "id": "Pengumuman"
+      },
+      "source": "original",
+      "pack": "free",
+      "status": "review_1_done",
+      "prompt": {
+        "ko": "직원은 무엇을 해야 합니까?",
+        "id": "Apa yang harus dilakukan pekerja?"
+      },
+      "options": [
+        {
+          "ko": "기계를 점검한다",
+          "id": "기계를 점검한다"
+        },
+        {
+          "ko": "작업을 계속한다",
+          "id": "작업을 계속한다"
+        },
+        {
+          "ko": "휴게실에서 기다린다",
+          "id": "휴게실에서 기다린다"
+        },
+        {
+          "ko": "집에 돌아간다",
+          "id": "집에 돌아간다"
+        }
+      ],
+      "answer_index": 2,
+      "explanation": {
+        "id": "Pengumuman meminta <b>작업을 멈추고 휴게실에서 기다려</b> — hentikan kerja dan tunggu di ruang istirahat. Yang memeriksa mesin adalah teknisi, bukan pekerja.",
+        "ko": "'작업을 멈추고 휴게실에서 기다려 주시기 바랍니다'가 핵심입니다. 점검은 직원이 하는 것이 아닙니다."
+      },
+      "key_words": [
+        {
+          "ko": "점검",
+          "id": "pemeriksaan"
+        },
+        {
+          "ko": "멈추다",
+          "id": "berhenti"
+        },
+        {
+          "ko": "휴게실",
+          "id": "ruang istirahat"
+        }
+      ],
+      "audio": {
+        "tts_text": "잠시 후 두 시부터 기계 점검이 있겠습니다. 모든 직원은 작업을 멈추고 휴게실에서 기다려 주시기 바랍니다.",
+        "file": null
+      },
+      "script": {
+        "ko": "(안내방송) 잠시 후 두 시부터 기계 점검이 있겠습니다.<br>모든 직원은 작업을 멈추고 휴게실에서 기다려 주시기 바랍니다."
+      }
+    },
+    {
+      "id": "Q003",
+      "section": "reading",
+      "type_tag": "표지판 읽기",
+      "type_label": {
+        "ko": "표지판 읽기",
+        "id": "Rambu"
+      },
+      "source": "original",
+      "pack": "free",
+      "status": "review_1_done",
+      "prompt": {
+        "ko": "이 표지판의 의미는 무엇입니까?",
+        "id": "Apa arti rambu ini?"
+      },
+      "options": [
+        {
+          "ko": "출입 금지",
+          "id": "Dilarang masuk"
+        },
+        {
+          "ko": "안전모를 쓰세요",
+          "id": "Pakai helm keselamatan"
+        },
+        {
+          "ko": "감전 주의",
+          "id": "Awas listrik"
+        },
+        {
+          "ko": "금연",
+          "id": "Dilarang merokok"
+        }
+      ],
+      "answer_index": 1,
+      "explanation": {
+        "id": "<b>안전모</b> = helm keselamatan, <b>착용</b> = memakai. Rambu ini wajib dipatuhi di pabrik dan lokasi konstruksi.",
+        "ko": "'안전모'는 머리를 보호하는 모자, '착용'은 몸에 걸치는 것입니다. 공장과 건설 현장의 필수 표지입니다."
+      },
+      "key_words": [
+        {
+          "ko": "안전모",
+          "id": "helm keselamatan"
+        },
+        {
+          "ko": "착용",
+          "id": "memakai"
+        },
+        {
+          "ko": "금지",
+          "id": "dilarang"
+        }
+      ],
+      "stimulus": {
+        "kind": "sign",
+        "text": "안전모 착용"
+      }
+    },
+    {
+      "id": "Q004",
+      "section": "reading",
+      "type_tag": "어휘·문법",
+      "type_label": {
+        "ko": "어휘·문법",
+        "id": "Kosakata"
+      },
+      "source": "original",
+      "pack": "free",
+      "status": "review_1_done",
+      "prompt": {
+        "ko": "약을 먹은 후에 30분 동안 (        ).",
+        "id": "약을 먹은 후에 30분 동안 (        )."
+      },
+      "options": [
+        {
+          "ko": "쉬세요",
+          "id": "쉬세요"
+        },
+        {
+          "ko": "드세요",
+          "id": "드세요"
+        },
+        {
+          "ko": "가세요",
+          "id": "가세요"
+        },
+        {
+          "ko": "사세요",
+          "id": "사세요"
+        }
+      ],
+      "answer_index": 0,
+      "explanation": {
+        "id": "Setelah minum obat, yang wajar dilakukan selama 30 menit adalah <b>쉬세요</b> (istirahatlah). Pola <b>-(으)세요</b> adalah perintah sopan.",
+        "ko": "약을 먹은 뒤 30분 동안 하는 행동으로 자연스러운 것은 '쉬세요'입니다. '-(으)세요'는 정중한 명령형입니다."
+      },
+      "key_words": [
+        {
+          "ko": "약",
+          "id": "obat"
+        },
+        {
+          "ko": "쉬다",
+          "id": "istirahat"
+        },
+        {
+          "ko": "동안",
+          "id": "selama"
+        }
+      ]
+    },
+    {
+      "id": "Q005",
+      "section": "reading",
+      "type_tag": "정보문 읽기",
+      "type_label": {
+        "ko": "정보문 읽기",
+        "id": "Dokumen"
+      },
+      "source": "original",
+      "pack": "free",
+      "status": "review_1_done",
+      "prompt": {
+        "ko": "이번 달 야간수당은 얼마입니까?",
+        "id": "Berapa tunjangan kerja malam bulan ini?"
+      },
+      "options": [
+        {
+          "ko": "2,096,270원",
+          "id": "2,096,270원"
+        },
+        {
+          "ko": "150,000원",
+          "id": "150,000원"
+        },
+        {
+          "ko": "2,246,270원",
+          "id": "2,246,270원"
+        },
+        {
+          "ko": "96,270원",
+          "id": "96,270원"
+        }
+      ],
+      "answer_index": 1,
+      "explanation": {
+        "id": "<b>야간수당</b> = tunjangan kerja malam, tertulis 150.000원. Jangan tertukar dengan <b>기본급</b> (gaji pokok) dan <b>합계</b> (total). Kemampuan membaca slip gaji melindungi hak Anda.",
+        "ko": "'야간수당'은 밤에 일한 대가입니다. '기본급'(기본 월급), '합계'(전체)와 헷갈리지 않아야 합니다. 명세서 읽기는 임금 확인의 기본입니다."
+      },
+      "key_words": [
+        {
+          "ko": "월급 명세서",
+          "id": "slip gaji"
+        },
+        {
+          "ko": "기본급",
+          "id": "gaji pokok"
+        },
+        {
+          "ko": "야간수당",
+          "id": "tunjangan malam"
+        }
+      ],
+      "stimulus": {
+        "kind": "document",
+        "title": {
+          "ko": "월급 명세서",
+          "id": "SLIP GAJI"
+        },
+        "rows": [
+          [
+            "기본급",
+            "2,096,270원"
+          ],
+          [
+            "야간수당",
+            "150,000원"
+          ]
+        ],
+        "total": [
+          "합계",
+          "2,246,270원"
+        ]
+      }
+    }
+  ]
+}
