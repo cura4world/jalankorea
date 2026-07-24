@@ -3,7 +3,16 @@
 @tailwind utilities;
 
 html, body, #root { height: 100%; }
-body { margin: 0; -webkit-tap-highlight-color: transparent; }
+body {
+  margin: 0;
+  -webkit-tap-highlight-color: transparent;
+  /* Pretendard는 오프라인 원칙상 아직 내장하지 않음. 시스템 한글 폰트로 폴백. */
+  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo',
+    'Malgun Gothic', system-ui, sans-serif;
+  background: #e7e9ee; /* 폰 프레임 바깥 배경 */
+  color: #131a24;
+  -webkit-font-smoothing: antialiased;
+}
 
 /* 접근성: 모션 줄이기 설정을 켠 사용자에게는 애니메이션을 끈다 */
 @media (prefers-reduced-motion: reduce) {

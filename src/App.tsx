@@ -1,61 +1,98 @@
-import { useEffect, useState } from 'react'
-import { getUiStrings, getVocabulary, type Lang } from './lib/content'
+// 앱 뼈대: 상단 헤더(제목 + 언어전환) · 화면 · 하단 탭 4개 · 레슨 오버레이.
+// v9 설계 원칙: 하단 탭은 분류(홈/학습/시험/한국생활), 이모지 금지, 딥 블루 절제.
+import { useState } from 'react'
+import type { Hangul, Lesson } from './lib/content'
+import { useI18n } from './lib/i18n'
+import LearnScreen from './screens/LearnScreen'
+import Placeholder from './screens/Placeholder'
+import LessonViewer from './components/LessonViewer'
+import { ExamIcon, GlobeIcon, HomeIcon, LearnIcon, LifeIcon } from './components/icons'
 
-// 설치 확인용 임시 화면.
-// 콘텐츠 JSON이 실제로 읽히는지 눈으로 보기 위한 것이며,
-// 실제 화면 구현이 시작되면 통째로 교체된다.
+type Tab = 'home' | 'learn' | 'exam' | 'life'
+
+const TABS: Array<{ id: Tab; icon: typeof HomeIcon; label: { ko: string; id: string } }> = [
+  { id: 'home', icon: HomeIcon, label: { ko: '홈', id: 'Beranda' } },
+  { id: 'learn', icon: LearnIcon, label: { ko: '학습', id: 'Belajar' } },
+  { id: 'exam', icon: ExamIcon, label: { ko: '시험', id: 'Ujian' } },
+  { id: 'life', icon: LifeIcon, label: { ko: '한국생활', id: 'Hidup di Korea' } },
+]
+
 export default function App() {
-  const [lang, setLang] = useState<Lang>('id')
-  const [ready, setReady] = useState(false)
-  const [error, setError] = useState<string | null>(null)
-  const [wordCount, setWordCount] = useState(0)
-  const [sample, setSample] = useState<{ ko: string; meaning: string; romaja: string } | null>(null)
+  const { lang, toggle, pick } = useI18n()
+  const [tab, setTab] = useState<Tab>('learn')
+  const [lesson, setLesson] = useState<{ lesson: Lesson; jamo?: Hangul['jamo'] } | null>(null)
 
-  useEffect(() => {
-    Promise.all([getUiStrings(), getVocabulary()])
-      .then(([, vocab]) => {
-        const words = vocab.units.flatMap((u) => u.words)
-        setWordCount(words.length)
-        const w = words[0]
-        if (w) setSample({ ko: w.ko, meaning: w.id_meaning, romaja: w.romaja })
-        setReady(true)
-      })
-      .catch((e: Error) => setError(e.message))
-  }, [])
+  const openLesson = (l: Lesson, jamo?: Hangul['jamo']) => setLesson({ lesson: l, jamo })
+
+  const current = TABS.find((x) => x.id === tab)!
 
   return (
-    <div className="min-h-full bg-white px-5 py-8 font-sans text-ink">
-      <p className="text-xs font-bold uppercase tracking-wider text-blue">Jalan Korea</p>
-      <h1 className="mt-2 text-2xl font-bold tracking-tight">설치 확인</h1>
+    <div className="relative mx-auto flex h-full max-w-[420px] flex-col overflow-hidden bg-page">
+      {/* 상단 헤더 */}
+      <header className="z-10 flex flex-shrink-0 items-center justify-between px-5 pb-3 pt-4">
+        <h1 className="text-[21px] font-bold tracking-tight text-ink">{pick(current.label)}</h1>
+        <button
+          onClick={toggle}
+          className="flex items-center gap-1.5 rounded-full border border-line bg-white px-3.5 py-1.5 text-[13px] font-semibold text-ink-2"
+        >
+          <GlobeIcon size={13} />
+          <span>{lang === 'id' ? 'ID' : 'KO'}</span>
+        </button>
+      </header>
 
-      {error && (
-        <div className="mt-6 rounded-xl border border-red bg-red-tint p-4 text-sm text-red">
-          {error}
-        </div>
-      )}
+      {/* 화면 본문 */}
+      <main className="flex-1 overflow-y-auto px-5 pb-24">
+        {tab === 'learn' && <LearnScreen onOpenLesson={openLesson} />}
+        {tab === 'home' && (
+          <Placeholder
+            title={{ ko: '홈', id: 'Beranda' }}
+            note={{
+              ko: '홈 화면은 다음 단계에서 만듭니다. 지금은 아래 "학습" 탭에서 한글·문법·단어장을 이용할 수 있어요.',
+              id: 'Beranda dibuat pada tahap berikutnya. Untuk sekarang, gunakan tab "Belajar" untuk Hangul, tata bahasa, dan kosakata.',
+            }}
+          />
+        )}
+        {tab === 'exam' && (
+          <Placeholder
+            title={{ ko: '시험', id: 'Ujian' }}
+            note={{
+              ko: '모의고사와 문제 풀이는 다음 단계에서 연결합니다.',
+              id: 'Simulasi ujian dan latihan soal akan ditambahkan pada tahap berikutnya.',
+            }}
+          />
+        )}
+        {tab === 'life' && (
+          <Placeholder
+            title={{ ko: '한국생활', id: 'Hidup di Korea' }}
+            note={{
+              ko: '급여 계산기와 생활 정보는 다음 단계에서 연결합니다.',
+              id: 'Kalkulator gaji dan info kehidupan akan ditambahkan pada tahap berikutnya.',
+            }}
+          />
+        )}
+      </main>
 
-      {!error && !ready && <p className="mt-6 text-sm text-ink-3">콘텐츠를 불러오는 중…</p>}
+      {/* 하단 탭 */}
+      <nav className="absolute inset-x-0 bottom-0 z-20 flex border-t border-line bg-white/95 px-1 pb-2 pt-2 backdrop-blur">
+        {TABS.map((x) => {
+          const Icon = x.icon
+          const on = x.id === tab
+          return (
+            <button
+              key={x.id}
+              onClick={() => setTab(x.id)}
+              className={`flex flex-1 flex-col items-center gap-1 py-1 text-[11px] font-semibold ${on ? 'text-blue' : 'text-ink-3'}`}
+            >
+              <Icon size={22} />
+              <span>{pick(x.label)}</span>
+            </button>
+          )
+        })}
+      </nav>
 
-      {ready && (
-        <>
-          <div className="mt-6 rounded-xl border border-line p-4">
-            <p className="text-sm text-ink-2">콘텐츠 연결됨 · 단어 {wordCount}개</p>
-            {sample && (
-              <div className="mt-3 flex items-baseline gap-3">
-                <span className="text-2xl font-bold text-blue">{sample.ko}</span>
-                <span className="text-sm text-ink-3">{sample.romaja}</span>
-              </div>
-            )}
-            {sample && <p className="mt-1 text-sm text-ink-2">{sample.meaning}</p>}
-          </div>
-
-          <button
-            onClick={() => setLang(lang === 'id' ? 'ko' : 'id')}
-            className="mt-4 rounded-full border border-line px-4 py-2 text-sm font-semibold text-blue"
-          >
-            {lang === 'id' ? '한국어' : 'Indonesia'}
-          </button>
-        </>
+      {/* 레슨 오버레이 (한글·문법 공용) */}
+      {lesson && (
+        <LessonViewer lesson={lesson.lesson} jamo={lesson.jamo} onClose={() => setLesson(null)} />
       )}
     </div>
   )
