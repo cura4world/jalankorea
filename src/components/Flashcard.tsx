@@ -1,5 +1,5 @@
 // 단어장 플래시카드. 카드를 눌러 뜻을 뒤집어 보고, 이전/다음/발음으로 넘긴다.
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useI18n } from '../lib/i18n'
 import { speak } from '../lib/speak'
 import { ChevronLeft, SpeakerIcon } from './icons'
@@ -10,10 +10,20 @@ export interface Word {
   romaja: string
 }
 
-export default function Flashcard({ words }: { words: Word[] }) {
+// initialWordKo: 홈의 "오늘의 한국어"에서 특정 단어로 바로 열 때 쓴다.
+export default function Flashcard({ words, initialWordKo }: { words: Word[]; initialWordKo?: string }) {
   const { t, pick } = useI18n()
   const [i, setI] = useState(0)
   const [flipped, setFlipped] = useState(false)
+
+  useEffect(() => {
+    if (!initialWordKo) return
+    const idx = words.findIndex((w) => w.ko === initialWordKo)
+    if (idx >= 0) {
+      setI(idx)
+      setFlipped(false)
+    }
+  }, [initialWordKo, words])
 
   if (words.length === 0) return null
   const w = words[i]

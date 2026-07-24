@@ -8,6 +8,7 @@ import { ChevronRight } from '../components/icons'
 
 interface Props {
   onOpenLesson: (lesson: Lesson, jamo?: Hangul['jamo']) => void
+  startWordKo?: string // 홈에서 특정 단어로 들어올 때
 }
 
 function Eyebrow({ children }: { children: React.ReactNode }) {
@@ -36,7 +37,7 @@ function LessonRow({ title, sub, free, onClick }: { title: string; sub: string; 
   )
 }
 
-export default function LearnScreen({ onOpenLesson }: Props) {
+export default function LearnScreen({ onOpenLesson, startWordKo }: Props) {
   const { pick } = useI18n()
   const [hangul, setHangul] = useState<Hangul | null>(null)
   const [grammar, setGrammar] = useState<Grammar | null>(null)
@@ -86,7 +87,7 @@ export default function LearnScreen({ onOpenLesson }: Props) {
       </div>
 
       <Eyebrow>{pick({ ko: '단어장', id: 'Kosakata' })}</Eyebrow>
-      <Flashcard words={words} />
+      <Flashcard words={words} initialWordKo={startWordKo} />
     </div>
   )
 }

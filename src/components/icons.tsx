@@ -49,6 +49,13 @@ export const LifeIcon = (p: IconProps) => (
   </Base>
 )
 
+export const MeIcon = (p: IconProps) => (
+  <Base {...p}>
+    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+    <circle cx="12" cy="7" r="4" />
+  </Base>
+)
+
 export const SpeakerIcon = (p: IconProps) => (
   <Base {...p}>
     <path d="M11 5L6 9H2v6h4l5 4z" />

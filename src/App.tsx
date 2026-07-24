@@ -3,26 +3,39 @@
 import { useState } from 'react'
 import type { Hangul, Lesson } from './lib/content'
 import { useI18n } from './lib/i18n'
+import { markLessonOpened } from './lib/progress'
+import HomeScreen from './screens/HomeScreen'
 import LearnScreen from './screens/LearnScreen'
 import Placeholder from './screens/Placeholder'
 import LessonViewer from './components/LessonViewer'
-import { ExamIcon, GlobeIcon, HomeIcon, LearnIcon, LifeIcon } from './components/icons'
+import { ExamIcon, GlobeIcon, HomeIcon, LearnIcon, LifeIcon, MeIcon } from './components/icons'
 
-type Tab = 'home' | 'learn' | 'exam' | 'life'
+type Tab = 'home' | 'learn' | 'exam' | 'life' | 'me'
 
 const TABS: Array<{ id: Tab; icon: typeof HomeIcon; label: { ko: string; id: string } }> = [
   { id: 'home', icon: HomeIcon, label: { ko: '홈', id: 'Beranda' } },
   { id: 'learn', icon: LearnIcon, label: { ko: '학습', id: 'Belajar' } },
   { id: 'exam', icon: ExamIcon, label: { ko: '시험', id: 'Ujian' } },
   { id: 'life', icon: LifeIcon, label: { ko: '한국생활', id: 'Hidup di Korea' } },
+  { id: 'me', icon: MeIcon, label: { ko: '내정보', id: 'Saya' } },
 ]
 
 export default function App() {
   const { lang, toggle, pick } = useI18n()
-  const [tab, setTab] = useState<Tab>('learn')
+  const [tab, setTab] = useState<Tab>('home')
   const [lesson, setLesson] = useState<{ lesson: Lesson; jamo?: Hangul['jamo'] } | null>(null)
+  const [startWordKo, setStartWordKo] = useState<string | undefined>()
 
-  const openLesson = (l: Lesson, jamo?: Hangul['jamo']) => setLesson({ lesson: l, jamo })
+  const openLesson = (l: Lesson, jamo?: Hangul['jamo']) => {
+    markLessonOpened(l.id)
+    setLesson({ lesson: l, jamo })
+  }
+
+  // 홈의 "오늘의 한국어" → 학습 탭 단어장을 그 단어로 연다.
+  const openWord = (ko: string) => {
+    setStartWordKo(ko)
+    setTab('learn')
+  }
 
   const current = TABS.find((x) => x.id === tab)!
 
@@ -42,16 +55,8 @@ export default function App() {
 
       {/* 화면 본문 */}
       <main className="flex-1 overflow-y-auto px-5 pb-24">
-        {tab === 'learn' && <LearnScreen onOpenLesson={openLesson} />}
-        {tab === 'home' && (
-          <Placeholder
-            title={{ ko: '홈', id: 'Beranda' }}
-            note={{
-              ko: '홈 화면은 다음 단계에서 만듭니다. 지금은 아래 "학습" 탭에서 한글·문법·단어장을 이용할 수 있어요.',
-              id: 'Beranda dibuat pada tahap berikutnya. Untuk sekarang, gunakan tab "Belajar" untuk Hangul, tata bahasa, dan kosakata.',
-            }}
-          />
-        )}
+        {tab === 'home' && <HomeScreen onOpenLesson={openLesson} onOpenWord={openWord} />}
+        {tab === 'learn' && <LearnScreen onOpenLesson={openLesson} startWordKo={startWordKo} />}
         {tab === 'exam' && (
           <Placeholder
             title={{ ko: '시험', id: 'Ujian' }}
@@ -67,6 +72,15 @@ export default function App() {
             note={{
               ko: '급여 계산기와 생활 정보는 다음 단계에서 연결합니다.',
               id: 'Kalkulator gaji dan info kehidupan akan ditambahkan pada tahap berikutnya.',
+            }}
+          />
+        )}
+        {tab === 'me' && (
+          <Placeholder
+            title={{ ko: '내정보', id: 'Saya' }}
+            note={{
+              ko: '학습 진도와 설정은 다음 단계에서 연결합니다.',
+              id: 'Progres belajar dan pengaturan akan ditambahkan pada tahap berikutnya.',
             }}
           />
         )}
