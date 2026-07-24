@@ -148,7 +148,7 @@
   "lessons": [
     {
       "unit": 1,
-      "status": "review_1_done",
+      "status": "draft",
       "id": "hangul",
       "category": {
         "ko": "학습 · 1과",
