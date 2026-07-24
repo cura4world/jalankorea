@@ -1,0 +1,70 @@
+# 개발용 APK (웹 셸)
+# https://cura4world.github.io/jalankorea/ 를 불러오는 껍데기 앱.
+# 한 번 설치하면 코드를 고치고 웹만 재배포되면 앱을 다시 열 때 최신 화면이 보인다.
+# 출시용과 별개(패키지 world.cura.jalankorea.dev, 이름 "Jalan Korea DEV").
+name: Build Dev APK
+
+on:
+  workflow_dispatch:
+  push:
+    tags: ['dev-*'] # dev-1, dev-2 … 태그를 밀면 개발용 APK를 다시 만든다
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
+
+      - run: npm ci
+
+      # 셸은 원격 URL을 로드하지만, cap sync가 webDir(dist)를 요구하므로 빌드는 해 둔다.
+      - name: Build web assets
+        run: npm run build
+        env:
+          VITE_BASE: ./
+
+      # JK_MODE=dev 이면 capacitor.config.ts가 server.url을 넣어 웹 셸로 만든다.
+      - name: Sync Capacitor (dev — 외부 URL 주입)
+        run: npx cap sync android
+        env:
+          JK_MODE: dev
+
+      # 디버그 빌드 = 자동 디버그 서명 + .dev 패키지 + DEV 이름/빨간 아이콘
+      - name: Build dev APK
+        working-directory: android
+        run: |
+          chmod +x gradlew
+          ./gradlew assembleDebug --no-daemon
+
+      - name: Rename output
+        run: |
+          mkdir -p out
+          cp android/app/build/outputs/apk/debug/app-debug.apk out/jalankorea-dev.apk
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: jalankorea-dev
+          path: out/
+
+      # 고정 주소로 배포(태그 dev). 실행할 때마다 같은 릴리스를 갱신한다.
+      # 다운로드: https://github.com/cura4world/jalankorea/releases/download/dev/jalankorea-dev.apk
+      - name: Publish dev release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: dev
+          name: 개발용 웹 셸 (Jalan Korea DEV)
+          prerelease: true
+          files: out/jalankorea-dev.apk

@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- 개발용(디버그) 빌드 전용 이름. 출시용과 폰에서 구분된다. -->
+<resources>
+    <string name="app_name">Jalan Korea DEV</string>
+    <string name="title_activity_main">Jalan Korea DEV</string>
+</resources>

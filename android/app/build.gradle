@@ -25,6 +25,12 @@ android {
         }
     }
     buildTypes {
+        // 개발용(웹 셸)은 디버그 빌드로 뽑는다.
+        // 패키지 ID에 .dev를 붙여 출시용과 한 폰에 함께 설치할 수 있게 한다.
+        // 이름·아이콘은 src/debug/res 오버레이로 구분된다(자동 디버그 서명).
+        debug {
+            applicationIdSuffix ".dev"
+        }
         release {
             signingConfig signingConfigs.release
             minifyEnabled false
