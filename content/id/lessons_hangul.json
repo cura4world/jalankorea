@@ -130,6 +130,19 @@
         "romaja": "i",
         "name": "이"
       }
+    ],
+    "compound_vowels": [
+      { "char": "ㅐ", "romaja": "ae", "name": "애" },
+      { "char": "ㅒ", "romaja": "yae", "name": "얘" },
+      { "char": "ㅔ", "romaja": "e", "name": "에" },
+      { "char": "ㅖ", "romaja": "ye", "name": "예" },
+      { "char": "ㅘ", "romaja": "wa", "name": "와" },
+      { "char": "ㅙ", "romaja": "wae", "name": "왜" },
+      { "char": "ㅚ", "romaja": "oe", "name": "외" },
+      { "char": "ㅝ", "romaja": "wo", "name": "워" },
+      { "char": "ㅞ", "romaja": "we", "name": "웨" },
+      { "char": "ㅟ", "romaja": "wi", "name": "위" },
+      { "char": "ㅢ", "romaja": "ui", "name": "의" }
     ]
   },
   "lessons": [
@@ -188,6 +201,89 @@
       "source_line": {
         "ko": "자체 제작 학습 자료 · 1과 / 예정 12과",
         "id": "Materi orisinal · Pelajaran 1 dari 12"
+      }
+    },
+    {
+      "unit": 2,
+      "status": "draft",
+      "id": "hangul2",
+      "category": {
+        "ko": "학습 · 2과",
+        "id": "Pelajaran 2"
+      },
+      "title": {
+        "ko": "받침과 겹모음",
+        "id": "Konsonan akhir & vokal rangkap"
+      },
+      "lede": {
+        "ko": "글자 아래에 오는 자음(받침)과, 두 모음이 합쳐진 겹모음을 배웁니다. 글자를 눌러 소리를 들어보세요.",
+        "id": "Belajar konsonan akhir (받침) di bawah suku kata dan vokal rangkap. Ketuk huruf untuk mendengar bunyinya."
+      },
+      "body": [
+        {
+          "h": {
+            "ko": "받침 — 끝소리 자음",
+            "id": "받침 — konsonan penutup"
+          },
+          "p": {
+            "ko": "자음이 모음 아래에 붙어 소리를 닫습니다. <b>바 + ㅂ = 밥</b>. 받침이 있으면 소리가 짧게 끊깁니다.",
+            "id": "Konsonan di bawah vokal menutup bunyi suku kata: <b>바 + ㅂ = 밥</b>. Dengan 받침, bunyi berhenti singkat."
+          },
+          "phrases": [
+            ["밥", "nasi"],
+            ["집", "rumah"],
+            ["물", "air"],
+            ["문", "pintu"]
+          ]
+        },
+        {
+          "h": {
+            "ko": "받침 대표음 7개",
+            "id": "7 bunyi 받침"
+          },
+          "p": {
+            "ko": "받침에 어떤 자음이 와도 실제 소리는 <b>ㄱ, ㄴ, ㄷ, ㄹ, ㅁ, ㅂ, ㅇ</b> 7가지 중 하나로만 납니다. 표기와 발음이 다를 수 있어요.",
+            "id": "Apa pun konsonannya, bunyi 받침 hanya salah satu dari <b>ㄱ, ㄴ, ㄷ, ㄹ, ㅁ, ㅂ, ㅇ</b>. Tulisan dan bunyi bisa berbeda."
+          },
+          "phrases": [
+            ["부엌 → [부억]", "dapur"],
+            ["옷 → [옫]", "baju"],
+            ["앞 → [압]", "depan"]
+          ]
+        },
+        {
+          "h": {
+            "ko": "겹모음 11개",
+            "id": "11 vokal rangkap"
+          },
+          "jamo": "comp"
+        },
+        {
+          "h": {
+            "ko": "겹모음이 쓰인 낱말",
+            "id": "Kata dengan vokal rangkap"
+          },
+          "phrases": [
+            ["의자", "kursi"],
+            ["시계", "jam"],
+            ["회사", "perusahaan"],
+            ["뭐예요?", "apa itu?"]
+          ]
+        },
+        {
+          "box": {
+            "ko": "다음 과 예고",
+            "id": "Pelajaran berikutnya"
+          },
+          "bp": {
+            "ko": "3과에서는 소리가 바뀌는 규칙(연음·경음화)을 배웁니다. (준비 중)",
+            "id": "Pelajaran 3: aturan perubahan bunyi (연음, 경음화). (Segera)"
+          }
+        }
+      ],
+      "source_line": {
+        "ko": "자체 제작 학습 자료 · 2과 / 예정 12과",
+        "id": "Materi orisinal · Pelajaran 2 dari 12"
       }
     }
   ]

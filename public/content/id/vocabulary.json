@@ -3,7 +3,7 @@
     "description": "단어장. 과 단위로 누적.",
     "schema_version": 1,
     "ui_language": "id",
-    "count": 12,
+    "count": 32,
     "updated": "2026-07-24"
   },
   "units": [
@@ -99,6 +99,46 @@
           "romaja": "sa-jang-nim",
           "audio": null
         }
+      ]
+    },
+    {
+      "unit": 2,
+      "title": {
+        "ko": "작업 지시",
+        "id": "Instruksi kerja"
+      },
+      "status": "draft",
+      "words": [
+        { "id": "V02-001", "ko": "시작하다", "id_meaning": "memulai", "romaja": "si-jak-ha-da", "audio": null },
+        { "id": "V02-002", "ko": "끝나다", "id_meaning": "selesai", "romaja": "kkeun-na-da", "audio": null },
+        { "id": "V02-003", "ko": "멈추다", "id_meaning": "berhenti", "romaja": "meom-chu-da", "audio": null },
+        { "id": "V02-004", "ko": "조심하다", "id_meaning": "hati-hati", "romaja": "jo-sim-ha-da", "audio": null },
+        { "id": "V02-005", "ko": "확인하다", "id_meaning": "memeriksa", "romaja": "hwa-gin-ha-da", "audio": null },
+        { "id": "V02-006", "ko": "빨리", "id_meaning": "cepat", "romaja": "ppal-li", "audio": null },
+        { "id": "V02-007", "ko": "천천히", "id_meaning": "pelan-pelan", "romaja": "cheon-cheon-hi", "audio": null },
+        { "id": "V02-008", "ko": "다시", "id_meaning": "lagi/ulang", "romaja": "da-si", "audio": null },
+        { "id": "V02-009", "ko": "여기", "id_meaning": "di sini", "romaja": "yeo-gi", "audio": null },
+        { "id": "V02-010", "ko": "저기", "id_meaning": "di sana", "romaja": "jeo-gi", "audio": null }
+      ]
+    },
+    {
+      "unit": 3,
+      "title": {
+        "ko": "몸과 병원",
+        "id": "Tubuh & rumah sakit"
+      },
+      "status": "draft",
+      "words": [
+        { "id": "V03-001", "ko": "머리", "id_meaning": "kepala", "romaja": "meo-ri", "audio": null },
+        { "id": "V03-002", "ko": "배", "id_meaning": "perut", "romaja": "bae", "audio": null },
+        { "id": "V03-003", "ko": "손", "id_meaning": "tangan", "romaja": "son", "audio": null },
+        { "id": "V03-004", "ko": "다리", "id_meaning": "kaki", "romaja": "da-ri", "audio": null },
+        { "id": "V03-005", "ko": "아프다", "id_meaning": "sakit", "romaja": "a-peu-da", "audio": null },
+        { "id": "V03-006", "ko": "다치다", "id_meaning": "terluka/cedera", "romaja": "da-chi-da", "audio": null },
+        { "id": "V03-007", "ko": "병원", "id_meaning": "rumah sakit", "romaja": "byeong-won", "audio": null },
+        { "id": "V03-008", "ko": "약", "id_meaning": "obat", "romaja": "yak", "audio": null },
+        { "id": "V03-009", "ko": "약국", "id_meaning": "apotek", "romaja": "yak-guk", "audio": null },
+        { "id": "V03-010", "ko": "열", "id_meaning": "demam", "romaja": "yeol", "audio": null }
       ]
     }
   ]

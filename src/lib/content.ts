@@ -32,7 +32,7 @@ export interface Jamo {
 export interface LessonBlock {
   h?: Bilingual // 소제목
   p?: Bilingual // 문단 (일부 <b> 강조 포함)
-  jamo?: 'cons' | 'vows' // 자모 그리드 (한글 과)
+  jamo?: 'cons' | 'vows' | 'comp' // 자모 그리드 (자음/모음/겹모음)
   phrases?: Array<[string, string]> // [한국어 예문, 뜻]
   box?: Bilingual // 안내 상자 제목
   bp?: Bilingual // 안내 상자 본문
@@ -53,7 +53,7 @@ export interface Lesson {
 
 export interface Hangul {
   _meta: Record<string, unknown>
-  jamo: { consonants: Jamo[]; vowels: Jamo[] }
+  jamo: { consonants: Jamo[]; vowels: Jamo[]; compound_vowels?: Jamo[] }
   lessons: Lesson[]
 }
 

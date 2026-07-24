@@ -8,6 +8,7 @@ export interface Word {
   ko: string
   id_meaning: string
   romaja: string
+  unit?: string // 소속 단어 유닛 제목(표시용)
 }
 
 // initialWordKo: 홈의 "오늘의 한국어"에서 특정 단어로 바로 열 때 쓴다.
@@ -39,6 +40,11 @@ export default function Flashcard({ words, initialWordKo }: { words: Word[]; ini
         onClick={() => setFlipped((f) => !f)}
         className="relative flex h-[186px] w-full flex-col items-center justify-center overflow-hidden rounded-card border border-line bg-white px-5 text-center"
       >
+        {w.unit && (
+          <div className="absolute top-4 text-[11px] font-semibold uppercase tracking-wide text-ink-3">
+            {w.unit}
+          </div>
+        )}
         {flipped ? (
           <div className="text-2xl font-semibold tracking-tight text-blue">{w.id_meaning}</div>
         ) : (

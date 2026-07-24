@@ -87,6 +87,70 @@
         "ko": "자체 제작 학습 자료 · 1과 / 예정 24과",
         "id": "Materi orisinal · Pelajaran 1 dari 24"
       }
+    },
+    {
+      "unit": 2,
+      "status": "draft",
+      "id": "gram2",
+      "category": {
+        "ko": "문법 · 2과",
+        "id": "Tata bahasa 2"
+      },
+      "title": {
+        "ko": "-아/어요 / 안 -",
+        "id": "-아/어요 / 안 -"
+      },
+      "lede": {
+        "ko": "일상 대화와 시험 듣기의 기본이 되는 현재형 존댓말과 부정 표현입니다.",
+        "id": "Bentuk sopan sehari-hari (present) dan cara membuat kalimat negatif — dasar untuk percakapan dan soal dengar."
+      },
+      "body": [
+        {
+          "h": {
+            "ko": "① -아/어요 — 정중한 현재형",
+            "id": "① -아/어요 — bentuk sopan (present)"
+          },
+          "p": {
+            "ko": "어간 끝 모음이 <b>ㅏ·ㅗ</b>면 <b>-아요</b>, 그 밖에는 <b>-어요</b>, <b>하다</b>는 <b>해요</b>가 됩니다.",
+            "id": "Jika vokal akhir kata dasar <b>ㅏ·ㅗ</b> pakai <b>-아요</b>, selain itu <b>-어요</b>, dan <b>하다</b> menjadi <b>해요</b>."
+          },
+          "phrases": [
+            ["가요", "(saya) pergi"],
+            ["먹어요", "(saya) makan"],
+            ["일해요", "(saya) bekerja"],
+            ["좋아요", "bagus / suka"]
+          ]
+        },
+        {
+          "h": {
+            "ko": "② 안 + 동사 — 부정",
+            "id": "② 안 + kata kerja — negatif"
+          },
+          "p": {
+            "ko": "동사·형용사 앞에 <b>안</b>을 붙이면 '~하지 않다'가 됩니다. 가장 쉽고 자주 쓰는 부정입니다.",
+            "id": "Menaruh <b>안</b> di depan kata kerja/sifat berarti 'tidak ...'. Cara negatif yang paling umum dan mudah."
+          },
+          "phrases": [
+            ["안 가요", "tidak pergi"],
+            ["안 먹어요", "tidak makan"],
+            ["안 아파요", "tidak sakit"]
+          ]
+        },
+        {
+          "warn": {
+            "ko": "시험 포인트",
+            "id": "Poin ujian"
+          },
+          "wp": {
+            "ko": "듣기에서 <b>안</b> 한 글자를 놓치면 뜻이 정반대가 됩니다. '일해요'와 '일 안 해요'를 끝까지 듣고 구분하세요.",
+            "id": "Di soal dengar, jika melewatkan satu kata <b>안</b>, artinya jadi kebalikannya. Dengarkan sampai akhir untuk membedakan '일해요' dan '일 안 해요'."
+          }
+        }
+      ],
+      "source_line": {
+        "ko": "자체 제작 학습 자료 · 2과 / 예정 24과",
+        "id": "Materi orisinal · Pelajaran 2 dari 24"
+      }
     }
   ]
 }

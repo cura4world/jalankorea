@@ -1,13 +1,13 @@
 // 레슨 전체화면 뷰어. 한글 과와 문법 과가 같은 본문 블록 구조를 쓰므로 공용.
 // 콘텐츠 JSON의 body[] 블록을 종류별로 렌더한다.
-import type { Jamo, Lesson } from '../lib/content'
+import type { Hangul, Jamo, Lesson } from '../lib/content'
 import { useI18n } from '../lib/i18n'
 import { speak } from '../lib/speak'
 import { CloseIcon, SpeakerIcon } from './icons'
 
 interface Props {
   lesson: Lesson
-  jamo?: { consonants: Jamo[]; vowels: Jamo[] }
+  jamo?: Hangul['jamo']
   onClose: () => void
 }
 
@@ -65,6 +65,7 @@ export default function LessonViewer({ lesson, jamo, onClose }: Props) {
 
             {block.jamo === 'cons' && jamo && <JamoGrid items={jamo.consonants} />}
             {block.jamo === 'vows' && jamo && <JamoGrid items={jamo.vowels} />}
+            {block.jamo === 'comp' && jamo?.compound_vowels && <JamoGrid items={jamo.compound_vowels} />}
 
             {block.phrases && (
               <div className="mt-2 space-y-2.5">
